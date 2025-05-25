@@ -25,3 +25,17 @@ print("ROC-AUC:", roc_auc_score(yte, model.predict_proba(Xte)[:, 1]))
 with open(DATA_DIR / "phish_model.pkl", "wb") as f:
     pickle.dump(model, f)
 print("✓ phish_model.pkl сохранён")
+
+# -------- сохранить probs и y для экспериментов -----------
+import pickle, pandas as pd, pathlib
+DATA = pathlib.Path(__file__).resolve().parents[1] / "data"
+
+df = pd.read_csv(DATA / "features.csv")
+X  = df.drop(columns=["label"])
+y  = df["label"]
+
+probs = model.predict_proba(X)[:, 1]
+
+pickle.dump(probs, open(DATA / "probs.pkl", "wb"))
+pickle.dump(y,     open(DATA / "y.pkl",     "wb"))
+print("✓ probs.pkl и y.pkl сохранены")
