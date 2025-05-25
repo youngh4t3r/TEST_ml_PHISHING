@@ -20,7 +20,7 @@
 git clone https://github.com/youngh4t3r/TEST_ml_PHISHING.git
 cd TEST_ml_PHISHING
 python -m venv .venv
-.\.venv\Scriptsctivate
+.\.venv\Scripts\Activate
 pip install -r requirements.txt
 ```
 
