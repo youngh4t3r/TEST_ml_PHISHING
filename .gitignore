@@ -1,0 +1,16 @@
+# данные и артефакты
+data/
+*.csv
+*.txt
+*.pkl
+features.csv
+urls_labeled.csv
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# IDE
+.vscode/
+.idea/
