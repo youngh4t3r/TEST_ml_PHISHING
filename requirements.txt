@@ -1,0 +1,7 @@
+pandas>=2.0
+numpy>=1.26
+scikit-learn>=1.4
+tldextract>=5.1
+python-Levenshtein>=0.24
+tqdm>=4.66
+requests>=2.31
