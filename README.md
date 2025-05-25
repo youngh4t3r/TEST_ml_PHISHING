@@ -9,7 +9,7 @@
 
 Подробный текст исследования и разработки алгоритма доступен в отдельной статье:
 
-👉 [Читать статью «Phishing Research Article»](diploma.md)
+👉 [Читать статью «Phishing Research Article»](Phishing_Research_Article.md)
 
 
 ## 🚀 Возможности
